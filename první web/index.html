@@ -7,7 +7,7 @@
     <meta name="description" content="Webové projekty studenta rekvalifikačního kurzu - Averianov Serghei." />
     <meta name="keywords" content="webový vývojář, rekvalifikace, programování, HTML, CSS" />
     <meta name="author" content="Serghei" />
-    <link rel="shortcut icon" href="ikona.ico" />
+    <link rel="shortcut icon" href="obrazky/ikona.ico" />
     <title>Averianov Serghei - Webový vývojář</title>
     <link rel="stylesheet" href="stile.css">
 </head>
@@ -18,6 +18,7 @@
             <small>Webový vývojář</small>
         </div>
         <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <ul>
                 <li class="aktivni"><a href="index.html">Domů</a></li>
                 <li><a href="about.html">O mně</a></li>
@@ -54,5 +55,10 @@
     <footer>
         Vytvořil &copy; 2025 Averianov Serghei
     </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle("menu-active");
+        }
+        </script>        
 </body>
 </html>

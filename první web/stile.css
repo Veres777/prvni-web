@@ -335,7 +335,7 @@ nav ul li a {
     text-align: center;
 }
 
-/* Responzivní úpravy */
+/* Zajištění responzivního designu pro mobilní zařízení */
 @media (max-width: 1024px) {
     .container {
         width: 95%;
@@ -348,6 +348,7 @@ nav ul li a {
     nav ul {
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
 
     nav ul li {
@@ -359,6 +360,7 @@ nav ul li a {
     nav {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
     }
 
     .hero {
@@ -371,6 +373,35 @@ nav ul li a {
 
     .section {
         padding: 40px 15px;
+    }
+
+    /* Oprava navigace */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #00386B;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+
+    .menu-active nav ul {
+        display: flex;
     }
 }
 
@@ -386,7 +417,18 @@ nav ul li a {
     .section {
         padding: 30px 10px;
     }
+
+    article {
+        padding: 20px;
+    }
+
+    .obrazek {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
+
+/* Skrytí vodorovného posouvání */
 body {
-    overflow-x: hidden; /* Zabrání vodorovnému posouvání */
+    overflow-x: hidden;
 }

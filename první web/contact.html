@@ -18,6 +18,7 @@
             <small>Webový vývojář</small>
         </div>
         <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <ul>
                 <li><a href="index.html">Domů</a></li>
                 <li><a href="about.html">O mně</a></li>
@@ -46,5 +47,10 @@
     <footer>
         Vytvořil &copy; 2025 Averianov Serghei
     </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle("menu-active");
+        }
+        </script>        
 </body>
 </html>
