@@ -387,3 +387,6 @@ nav ul li a {
         padding: 30px 10px;
     }
 }
+body {
+    overflow-x: hidden; /* Zabrání vodorovnému posouvání */
+}
